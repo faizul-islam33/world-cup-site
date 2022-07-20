@@ -40,6 +40,7 @@ body {
     background-color: #4d4343;
     width: 80%;
     border-radius: 30px;
+    height: 450px;
 }
 
 .half-width {
@@ -49,7 +50,7 @@ body {
 
 .half-width img {
     padding-top: 33px;
-    width: 80%;
+    width: 72.5%;
 }
 
 h1 {
@@ -109,6 +110,7 @@ p {
     position: relative;
     animation: sliding 2s ease-in-out 0.5s 2 alternate;
 }
+
 
 .fa-greater-than {
     font-size: 25px;
@@ -355,11 +357,11 @@ hr {
         overflow-x: hidden;
     }
 
-
-
     .flexible-container {
         flex-direction: column;
         width: 80%;
+        height: 800px;
+        align-items: center;
     }
 
     .half-width img {
@@ -469,9 +471,14 @@ hr {
     .flexible-container {
         flex-direction: row;
         width: 80%;
-        height: 500px;
+        height: 550px;
     }
 
+    .half-width img {
+        padding-top: 33px;
+        margin-top: 100px;
+        width: 100%;
+    }
 
 
     .container {
