@@ -1,5 +1,17 @@
+/*--------------- 
+      Fonts 
+---------------*/
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
 
+
+
+
+
+
+/*------------------------------ 
+  Common Styles or Utilities 
+------------------------------*/
 
 body {
     font-family: 'Poppins', sans-serif;
@@ -8,6 +20,13 @@ body {
     overflow-x: hidden;
 }
 
+
+
+
+
+/*------------------------- 
+    Top Banner Section 
+-------------------------*/
 
 .banner-section {
     display: flex;
@@ -64,28 +83,35 @@ p {
 
 
 
+
+/*-------------------------------- 
+  Blogs, Matches and Page Links 
+--------------------------------*/
+
 .container {
     display: flex;
     margin-bottom: 130px;
     width: 90%;
-    margin-left: 10%;
 }
 
 .menu-box {
     padding-top: 30px;
-    background-color: #161616;
+    background-color: #d1cbcb;
     width: 250px;
-    height: 230px;
+    height: 220px;
     display: flex;
     flex-direction: column;
     border-radius: 10px;
     justify-content: center;
     align-items: center;
     margin-right: 24px;
+    margin-left: 10%;
+
 }
 
 .item-name {
-    padding-top: 5px;
+    text-decoration: none;
+    padding-top: 3px;
     font-size: 18px;
     font-weight: 500;
     color: #161616;
@@ -98,6 +124,25 @@ p {
     margin-bottom: 30px;
     text-align: center;
 }
+
+
+#active-item-name {
+    text-decoration: none;
+    padding-top: 3px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #FFFFFF;
+    width: 170px;
+    height: 30px;
+    background-color: #DD0000;
+    font-weight: 20px;
+    border-radius: 10px;
+    font-weight: 500;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+
 
 .menu-cards {
     display: grid;
@@ -115,6 +160,11 @@ p {
     width: 312px;
     height: 362px;
     border: 2px solid #EBEBEB;
+    border-radius: 15px;
+}
+
+.card img {
+    margin-bottom: 15px;
 }
 
 .card-link {
@@ -141,8 +191,44 @@ p {
     justify-content: center;
 }
 
+.match-card {
+    width: 312px;
+    height: 242px;
+    border: 2px solid #EBEBEB;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.flags {
+    padding-top: 53px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.flags span {
+    margin-top: 20px;
+    font-size: 16px;
+    font-weight: 700;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.match-card p {
+    margin-top: -5px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #4D4D4D;
+}
 
 
+
+
+
+/*----------------- 
+   Tablet Button 
+-----------------*/
 
 button {
     display: none;
@@ -150,6 +236,12 @@ button {
 
 
 
+
+
+
+/*--------------- 
+     Footer 
+---------------*/
 
 footer {
     background-color: #161616;
@@ -211,6 +303,16 @@ hr {
 
 
 
+
+/* -----------------
+    Media Queries
+------------------*/
+
+
+/*-----------------
+  Mobile Devices
+------------------*/
+
 @media only screen and (max-width:688px) {
 
     body {
@@ -262,10 +364,6 @@ hr {
     }
 
 
-
-
-
-
     footer {
         width: 100%;
         height: 760px;
@@ -305,6 +403,10 @@ hr {
 
 
 
+
+/*-----------------
+  Tablet Devices 
+-----------------*/
 
 @media only screen and (min-width:688px) and (max-width: 992px) {
 
