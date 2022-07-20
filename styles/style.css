@@ -37,7 +37,7 @@ body {
 .flexible-container {
     display: flex;
     margin-bottom: 150px;
-    background-color: black;
+    background-color: #4d4343;
     width: 80%;
     border-radius: 30px;
 }
@@ -64,6 +64,41 @@ p {
     font-weight: 400;
 }
 
+
+@keyframes sliding {
+    0% {
+        background-color: #DD0000;
+        left: 0;
+        top: 0;
+    }
+
+
+    25% {
+        top: 50px;
+        background-color: #DD0000;
+        transform: scale(0.5);
+    }
+
+    50% {
+        top: 0;
+        background-color: #DD0000;
+        transform: scale(1);
+    }
+
+    75% {
+        top: 50px;
+        background-color: #DD0000;
+        transform: scale(0.5);
+    }
+
+
+    100% {
+        background-color: #DD0000;
+        left: 200px;
+        top: 0;
+    }
+}
+
 .link-button {
     text-decoration: none;
     background-color: #DD0000;
@@ -71,6 +106,8 @@ p {
     color: white;
     font-weight: 500;
     border-radius: 5px;
+    position: relative;
+    animation: sliding 2s ease-in-out 0.5s 2 alternate;
 }
 
 .fa-greater-than {
@@ -84,9 +121,9 @@ p {
 
 
 
-/*-------------------------------- 
-  Blogs, Matches and Page Links 
---------------------------------*/
+/*---------------------------------- 
+  Navigation Menu, Blogs, Matches  
+----------------------------------*/
 
 .container {
     display: flex;
@@ -96,7 +133,7 @@ p {
 
 .menu-box {
     padding-top: 30px;
-    background-color: #d1cbcb;
+    background-color: #4d4343;
     width: 250px;
     height: 220px;
     display: flex;
@@ -244,7 +281,7 @@ button {
 ---------------*/
 
 footer {
-    background-color: #161616;
+    background-color: #4d4343;
     width: 100%;
     height: 460px;
 }
@@ -308,7 +345,6 @@ hr {
     Media Queries
 ------------------*/
 
-
 /*-----------------
   Mobile Devices
 ------------------*/
@@ -335,6 +371,7 @@ hr {
 
 
     .container {
+        margin-top: -100px;
         flex-direction: column;
         width: 50%;
         transform: translateX(35%);
@@ -346,12 +383,26 @@ hr {
     }
 
     .item-name {
-        border-radius: 10px solid #E8E8E8;
-        width: 210px;
+        border: 1px solid #E8E8E8;
+        border-radius: 10px;
+        width: 190px;
         height: 48px;
+        padding-top: 5px;
+
         color: #161616;
         font-size: 20px;
     }
+
+    #active-item-name {
+        width: 190px;
+        height: 48px;
+        padding-top: 5px;
+        border: 1px solid #E8E8E8;
+        border-radius: 10px;
+        color: #FFFFFF;
+        font-size: 20px;
+    }
+
 
     .menu-cards {
         grid-template-columns: repeat(1, 1fr);
@@ -426,8 +477,7 @@ hr {
     .container {
         flex-direction: column;
         width: 50%;
-        margin-bottom: 50px;
-        margin-top: -100px;
+        margin-top: -140px;
     }
 
 
@@ -436,22 +486,29 @@ hr {
     .menu-box {
         background-color: #FFFFFF;
         flex-direction: row;
-        transform: translateX(75%);
+        justify-content: space-between;
+        width: 750px;
     }
 
 
-
     .item-name {
-        width: 700px;
-    }
-
-
-
-    .item-name {
-        border-radius: 10px solid #E8E8E8;
-        width: 210px;
-        height: 48px;
+        border: 1px solid #E8E8E8;
+        border-radius: 10px;
+        padding-top: 25px;
+        width: 230px;
+        height: 49px;
         color: #161616;
+        font-size: 20px;
+    }
+
+    #active-item-name {
+        width: 230px;
+        height: 49px;
+        padding-top: 15px;
+
+        border: 1px solid #E8E8E8;
+        border-radius: 10px;
+        color: #FFFFFF;
         font-size: 20px;
     }
 
